@@ -1,0 +1,2035 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0711.1149                               -->
+<workbook original-version='18.1' source-build='2023.1.4 (20231.23.0711.1149)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <CascadingFiltersHamburgerUI />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='01_전국 문화시설 현황_2021' inline='true' name='federated.0z58c0417mf9ln16zfspx040l0ov' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='01_전국 문화시설 현황_2021' name='textscan.1krjqyx0ofeovv18o56j213gj04y'>
+            <connection class='textscan' directory='C:/Users/김재원/Desktop' filename='01_전국 문화시설 현황_2021.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1krjqyx0ofeovv18o56j213gj04y' name='01_전국 문화시설 현황_2021.csv' table='[01_전국 문화시설 현황_2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='lclas' ordinal='1' />
+            <column datatype='string' name='mlsfc' ordinal='2' />
+            <column datatype='string' name='fclt_name' ordinal='3' />
+            <column datatype='string' name='ctprvn_nm' ordinal='4' />
+            <column datatype='string' name='sgnr_nm' ordinal='5' />
+            <column datatype='integer' name='legaldong_cd' ordinal='6' />
+            <column datatype='string' name='legalemd_nm' ordinal='7' />
+            <column datatype='integer' name='adstrd_cd' ordinal='8' />
+            <column datatype='string' name='adstrd_nm' ordinal='9' />
+            <column datatype='integer' name='rdnmaddr_cd' ordinal='10' />
+            <column datatype='string' name='rdnm_addr' ordinal='11' />
+            <column datatype='integer' name='zip_cd' ordinal='12' />
+            <column datatype='string' name='grid_cd' ordinal='13' />
+            <column datatype='real' name='x_cd' ordinal='14' />
+            <column datatype='real' name='y_cd' ordinal='15' />
+            <column datatype='integer' name='buld_totar' ordinal='16' />
+            <column datatype='integer' name='usemem_nm' ordinal='17' />
+            <column datatype='real' name='infl_factor' ordinal='18' />
+            <column datatype='string' name='file_name' ordinal='19' />
+            <column datatype='date' name='base_ymd' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1krjqyx0ofeovv18o56j213gj04y' name='01_전국 문화시설 현황_2021.csv' table='[01_전국 문화시설 현황_2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='lclas' ordinal='1' />
+            <column datatype='string' name='mlsfc' ordinal='2' />
+            <column datatype='string' name='fclt_name' ordinal='3' />
+            <column datatype='string' name='ctprvn_nm' ordinal='4' />
+            <column datatype='string' name='sgnr_nm' ordinal='5' />
+            <column datatype='integer' name='legaldong_cd' ordinal='6' />
+            <column datatype='string' name='legalemd_nm' ordinal='7' />
+            <column datatype='integer' name='adstrd_cd' ordinal='8' />
+            <column datatype='string' name='adstrd_nm' ordinal='9' />
+            <column datatype='integer' name='rdnmaddr_cd' ordinal='10' />
+            <column datatype='string' name='rdnm_addr' ordinal='11' />
+            <column datatype='integer' name='zip_cd' ordinal='12' />
+            <column datatype='string' name='grid_cd' ordinal='13' />
+            <column datatype='real' name='x_cd' ordinal='14' />
+            <column datatype='real' name='y_cd' ordinal='15' />
+            <column datatype='integer' name='buld_totar' ordinal='16' />
+            <column datatype='integer' name='usemem_nm' ordinal='17' />
+            <column datatype='real' name='infl_factor' ordinal='18' />
+            <column datatype='string' name='file_name' ordinal='19' />
+            <column datatype='date' name='base_ymd' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lclas</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lclas]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>lclas</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mlsfc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mlsfc]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>mlsfc</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fclt_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fclt_name]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>fclt_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ctprvn_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ctprvn_nm]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>ctprvn_nm</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sgnr_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sgnr_nm]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>sgnr_nm</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legaldong_cd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[legaldong_cd]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>legaldong_cd</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legalemd_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[legalemd_nm]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>legalemd_nm</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adstrd_cd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adstrd_cd]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>adstrd_cd</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adstrd_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[adstrd_nm]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>adstrd_nm</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rdnmaddr_cd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rdnmaddr_cd]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>rdnmaddr_cd</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rdnm_addr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rdnm_addr]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>rdnm_addr</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip_cd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zip_cd]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>zip_cd</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grid_cd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grid_cd]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>grid_cd</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x_cd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x_cd]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>x_cd</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y_cd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y_cd]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>y_cd</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>buld_totar</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[buld_totar]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>buld_totar</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usemem_nm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[usemem_nm]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>usemem_nm</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>infl_factor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[infl_factor]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>infl_factor</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>file_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[file_name]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>file_name</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>base_ymd</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[base_ymd]</local-name>
+            <parent-name>[01_전국 문화시설 현황_2021.csv]</parent-name>
+            <remote-alias>base_ymd</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='01_전국 문화시설 현황_2021.csv' datatype='table' name='[__tableau_internal_object_id__].[01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B]' role='measure' type='quantitative' />
+      <column caption='Adstrd Cd' datatype='integer' name='[adstrd_cd]' role='measure' type='quantitative' />
+      <column caption='Adstrd Nm' datatype='string' name='[adstrd_nm]' role='dimension' type='nominal' />
+      <column caption='Base Ymd' datatype='date' name='[base_ymd]' role='dimension' type='ordinal' />
+      <column caption='Buld Totar' datatype='integer' name='[buld_totar]' role='measure' type='quantitative' />
+      <column caption='Ctprvn Nm' datatype='string' name='[ctprvn_nm]' role='dimension' type='nominal' />
+      <column caption='Fclt Name' datatype='string' name='[fclt_name]' role='dimension' type='nominal' />
+      <column caption='File Name' datatype='string' name='[file_name]' role='dimension' type='nominal' />
+      <column caption='Grid Cd' datatype='string' name='[grid_cd]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Infl Factor' datatype='real' name='[infl_factor]' role='measure' type='quantitative' />
+      <column caption='Lclas' datatype='string' name='[lclas]' role='dimension' type='nominal' />
+      <column caption='Legaldong Cd' datatype='integer' name='[legaldong_cd]' role='measure' type='quantitative' />
+      <column caption='Legalemd Nm' datatype='string' name='[legalemd_nm]' role='dimension' type='nominal' />
+      <column caption='Mlsfc' datatype='string' name='[mlsfc]' role='dimension' type='nominal' />
+      <column caption='Rdnm Addr' datatype='string' name='[rdnm_addr]' role='dimension' type='nominal' />
+      <column caption='Rdnmaddr Cd' datatype='integer' name='[rdnmaddr_cd]' role='measure' type='quantitative' />
+      <column caption='Sgnr Nm' datatype='string' name='[sgnr_nm]' role='dimension' type='nominal' />
+      <column caption='Usemem Nm' datatype='integer' name='[usemem_nm]' role='measure' type='quantitative' />
+      <column caption='X Cd' datatype='real' name='[x_cd]' role='measure' type='quantitative' />
+      <column caption='Y Cd' datatype='real' name='[y_cd]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Zip Cd' datatype='integer' default-format='*00000' name='[zip_cd]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <drill-paths>
+        <drill-path name='시도'>
+          <field>[ctprvn_nm]</field>
+          <field>[sgnr_nm]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='01_전국 문화시설 현황_2021.csv' id='01_전국 문화시설 현황_2021.csv_D9603A0806E941C7AFAF9BB96732C40B'>
+            <properties context=''>
+              <relation connection='textscan.1krjqyx0ofeovv18o56j213gj04y' name='01_전국 문화시설 현황_2021.csv' table='[01_전국 문화시설 현황_2021#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='id' ordinal='0' />
+                  <column datatype='string' name='lclas' ordinal='1' />
+                  <column datatype='string' name='mlsfc' ordinal='2' />
+                  <column datatype='string' name='fclt_name' ordinal='3' />
+                  <column datatype='string' name='ctprvn_nm' ordinal='4' />
+                  <column datatype='string' name='sgnr_nm' ordinal='5' />
+                  <column datatype='integer' name='legaldong_cd' ordinal='6' />
+                  <column datatype='string' name='legalemd_nm' ordinal='7' />
+                  <column datatype='integer' name='adstrd_cd' ordinal='8' />
+                  <column datatype='string' name='adstrd_nm' ordinal='9' />
+                  <column datatype='integer' name='rdnmaddr_cd' ordinal='10' />
+                  <column datatype='string' name='rdnm_addr' ordinal='11' />
+                  <column datatype='integer' name='zip_cd' ordinal='12' />
+                  <column datatype='string' name='grid_cd' ordinal='13' />
+                  <column datatype='real' name='x_cd' ordinal='14' />
+                  <column datatype='real' name='y_cd' ordinal='15' />
+                  <column datatype='integer' name='buld_totar' ordinal='16' />
+                  <column datatype='integer' name='usemem_nm' ordinal='17' />
+                  <column datatype='real' name='infl_factor' ordinal='18' />
+                  <column datatype='string' name='file_name' ordinal='19' />
+                  <column datatype='date' name='base_ymd' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='KC_600_MIL_CLT_STATN_BIZAEA_2023' inline='true' name='federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='KC_600_MIL_CLT_STATN_BIZAEA_2023' name='textscan.0hjv3s60wrf67g1alo8sh1b68iu0'>
+            <connection class='textscan' directory='C:/Users/김재원/Desktop' filename='KC_600_MIL_CLT_STATN_BIZAEA_2023.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0hjv3s60wrf67g1alo8sh1b68iu0' name='KC_600_MIL_CLT_STATN_BIZAEA_2023.csv' table='[KC_600_MIL_CLT_STATN_BIZAEA_2023#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='CTPRVN_NM' ordinal='0' />
+            <column datatype='string' name='SIGNGU_NM' ordinal='1' />
+            <column datatype='integer' name='SIGNGU_CD' ordinal='2' />
+            <column datatype='integer' name='POPLTN_CO' ordinal='3' />
+            <column datatype='integer' name='LBRRY_CO' ordinal='4' />
+            <column datatype='integer' name='MUSEUM_CO' ordinal='5' />
+            <column datatype='integer' name='ARTGR_CO' ordinal='6' />
+            <column datatype='integer' name='PRFPLC_CO' ordinal='7' />
+            <column datatype='integer' name='ALL_CTLSTT_CO' ordinal='8' />
+            <column datatype='real' name='LBRRY_RT' ordinal='9' />
+            <column datatype='real' name='MUSEUM_RT' ordinal='10' />
+            <column datatype='real' name='ARTGR_RT' ordinal='11' />
+            <column datatype='real' name='PRFPLC_RT' ordinal='12' />
+            <column datatype='real' name='ALL_CLTUR_RT' ordinal='13' />
+            <column datatype='string' name='FILE_NM' ordinal='14' />
+            <column datatype='date' name='BASE_DE' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0hjv3s60wrf67g1alo8sh1b68iu0' name='KC_600_MIL_CLT_STATN_BIZAEA_2023.csv' table='[KC_600_MIL_CLT_STATN_BIZAEA_2023#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='CTPRVN_NM' ordinal='0' />
+            <column datatype='string' name='SIGNGU_NM' ordinal='1' />
+            <column datatype='integer' name='SIGNGU_CD' ordinal='2' />
+            <column datatype='integer' name='POPLTN_CO' ordinal='3' />
+            <column datatype='integer' name='LBRRY_CO' ordinal='4' />
+            <column datatype='integer' name='MUSEUM_CO' ordinal='5' />
+            <column datatype='integer' name='ARTGR_CO' ordinal='6' />
+            <column datatype='integer' name='PRFPLC_CO' ordinal='7' />
+            <column datatype='integer' name='ALL_CTLSTT_CO' ordinal='8' />
+            <column datatype='real' name='LBRRY_RT' ordinal='9' />
+            <column datatype='real' name='MUSEUM_RT' ordinal='10' />
+            <column datatype='real' name='ARTGR_RT' ordinal='11' />
+            <column datatype='real' name='PRFPLC_RT' ordinal='12' />
+            <column datatype='real' name='ALL_CLTUR_RT' ordinal='13' />
+            <column datatype='string' name='FILE_NM' ordinal='14' />
+            <column datatype='date' name='BASE_DE' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CTPRVN_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CTPRVN_NM]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>CTPRVN_NM</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIGNGU_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SIGNGU_NM]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>SIGNGU_NM</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIGNGU_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SIGNGU_CD]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>SIGNGU_CD</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPLTN_CO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POPLTN_CO]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>POPLTN_CO</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LBRRY_CO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LBRRY_CO]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>LBRRY_CO</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MUSEUM_CO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MUSEUM_CO]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>MUSEUM_CO</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARTGR_CO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ARTGR_CO]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>ARTGR_CO</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRFPLC_CO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRFPLC_CO]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>PRFPLC_CO</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALL_CTLSTT_CO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ALL_CTLSTT_CO]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>ALL_CTLSTT_CO</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LBRRY_RT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LBRRY_RT]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>LBRRY_RT</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MUSEUM_RT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MUSEUM_RT]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>MUSEUM_RT</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARTGR_RT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ARTGR_RT]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>ARTGR_RT</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRFPLC_RT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PRFPLC_RT]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>PRFPLC_RT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALL_CLTUR_RT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ALL_CLTUR_RT]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>ALL_CLTUR_RT</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FILE_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FILE_NM]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>FILE_NM</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASE_DE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[BASE_DE]</local-name>
+            <parent-name>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv]</parent-name>
+            <remote-alias>BASE_DE</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='All Cltur Rt' datatype='real' name='[ALL_CLTUR_RT]' role='measure' type='quantitative' />
+      <column caption='All Ctlstt Co' datatype='integer' name='[ALL_CTLSTT_CO]' role='measure' type='quantitative' />
+      <column caption='Artgr Co' datatype='integer' name='[ARTGR_CO]' role='measure' type='quantitative' />
+      <column caption='Artgr Rt' datatype='real' name='[ARTGR_RT]' role='measure' type='quantitative' />
+      <column caption='Base De' datatype='date' name='[BASE_DE]' role='dimension' type='ordinal' />
+      <column caption='Ctprvn Nm' datatype='string' name='[CTPRVN_NM]' role='dimension' type='nominal' />
+      <column caption='File Nm' datatype='string' name='[FILE_NM]' role='dimension' type='nominal' />
+      <column caption='Lbrry Co' datatype='integer' name='[LBRRY_CO]' role='measure' type='quantitative' />
+      <column caption='Lbrry Rt' datatype='real' name='[LBRRY_RT]' role='measure' type='quantitative' />
+      <column caption='Museum Co' datatype='integer' name='[MUSEUM_CO]' role='measure' type='quantitative' />
+      <column caption='Museum Rt' datatype='real' name='[MUSEUM_RT]' role='measure' type='quantitative' />
+      <column caption='Popltn Co' datatype='integer' name='[POPLTN_CO]' role='measure' type='quantitative' />
+      <column caption='Prfplc Co' datatype='integer' name='[PRFPLC_CO]' role='measure' type='quantitative' />
+      <column caption='Prfplc Rt' datatype='real' name='[PRFPLC_RT]' role='measure' type='quantitative' />
+      <column caption='Signgu Cd' datatype='integer' name='[SIGNGU_CD]' role='measure' type='quantitative' />
+      <column caption='Signgu Nm' datatype='string' name='[SIGNGU_NM]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='KC_600_MIL_CLT_STATN_BIZAEA_2023.csv' datatype='table' name='[__tableau_internal_object_id__].[KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D]' role='measure' type='quantitative' />
+      <column-instance column='[CTPRVN_NM]' derivation='None' name='[none:CTPRVN_NM:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:CTPRVN_NM:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;충청북도&quot;</bucket>
+            </map>
+            <map to='#325f8b'>
+              <bucket>&quot;충청남도&quot;</bucket>
+            </map>
+            <map to='#396794'>
+              <bucket>&quot;제주특별자치도&quot;</bucket>
+            </map>
+            <map to='#406e9c'>
+              <bucket>&quot;전라북도&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;전라남도&quot;</bucket>
+            </map>
+            <map to='#4d7eac'>
+              <bucket>&quot;인천광역시&quot;</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>&quot;울산광역시&quot;</bucket>
+            </map>
+            <map to='#5e8fba'>
+              <bucket>&quot;없음(세종시)&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;서울특별시&quot;</bucket>
+            </map>
+            <map to='#6fa0c7'>
+              <bucket>&quot;부산광역시&quot;</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>&quot;대전광역시&quot;</bucket>
+            </map>
+            <map to='#81b1d5'>
+              <bucket>&quot;대구광역시&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;광주광역시&quot;</bucket>
+            </map>
+            <map to='#96c3e2'>
+              <bucket>&quot;경상북도&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;경상남도&quot;</bucket>
+            </map>
+            <map to='#add4ec'>
+              <bucket>&quot;경기도&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;강원특별자치도&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='KC_600_MIL_CLT_STATN_BIZAEA_2023.csv' id='KC_600_MIL_CLT_STATN_BIZAEA_2023.csv_6CD4B3F8978441BC9B8477B23E454C2D'>
+            <properties context=''>
+              <relation connection='textscan.0hjv3s60wrf67g1alo8sh1b68iu0' name='KC_600_MIL_CLT_STATN_BIZAEA_2023.csv' table='[KC_600_MIL_CLT_STATN_BIZAEA_2023#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='CTPRVN_NM' ordinal='0' />
+                  <column datatype='string' name='SIGNGU_NM' ordinal='1' />
+                  <column datatype='integer' name='SIGNGU_CD' ordinal='2' />
+                  <column datatype='integer' name='POPLTN_CO' ordinal='3' />
+                  <column datatype='integer' name='LBRRY_CO' ordinal='4' />
+                  <column datatype='integer' name='MUSEUM_CO' ordinal='5' />
+                  <column datatype='integer' name='ARTGR_CO' ordinal='6' />
+                  <column datatype='integer' name='PRFPLC_CO' ordinal='7' />
+                  <column datatype='integer' name='ALL_CTLSTT_CO' ordinal='8' />
+                  <column datatype='real' name='LBRRY_RT' ordinal='9' />
+                  <column datatype='real' name='MUSEUM_RT' ordinal='10' />
+                  <column datatype='real' name='ARTGR_RT' ordinal='11' />
+                  <column datatype='real' name='PRFPLC_RT' ordinal='12' />
+                  <column datatype='real' name='ALL_CLTUR_RT' ordinal='13' />
+                  <column datatype='string' name='FILE_NM' ordinal='14' />
+                  <column datatype='date' name='BASE_DE' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='20-30대 인구수 대비 지역별 문화시설 수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='KC_600_MIL_CLT_STATN_BIZAEA_2023' name='federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu'>
+            <column caption='All Ctlstt Co' datatype='integer' name='[ALL_CTLSTT_CO]' role='measure' type='quantitative' />
+            <column caption='Ctprvn Nm' datatype='string' name='[CTPRVN_NM]' role='dimension' type='nominal' />
+            <column-instance column='[CTPRVN_NM]' derivation='None' name='[none:CTPRVN_NM:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ALL_CTLSTT_CO]' derivation='Sum' name='[sum:ALL_CTLSTT_CO:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[sum:ALL_CTLSTT_CO:qk]' num-steps='10' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[sum:ALL_CTLSTT_CO:qk]' />
+              <color column='[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[sum:ALL_CTLSTT_CO:qk]' />
+              <text column='[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[none:CTPRVN_NM:nk]' />
+              <text column='[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[sum:ALL_CTLSTT_CO:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A456EBE2-5C2F-4F93-B060-ED60977B4709}' />
+    </worksheet>
+    <worksheet name='경상남도 문화시설의 종류 및 수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_전국 문화시설 현황_2021' name='federated.0z58c0417mf9ln16zfspx040l0ov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z58c0417mf9ln16zfspx040l0ov'>
+            <column-instance column='[ctprvn_nm]' derivation='Count' name='[cnt:ctprvn_nm:qk]' pivot='key' type='quantitative' />
+            <column caption='Ctprvn Nm' datatype='string' name='[ctprvn_nm]' role='dimension' type='nominal' />
+            <column caption='Mlsfc' datatype='string' name='[mlsfc]' role='dimension' type='nominal' />
+            <column-instance column='[ctprvn_nm]' derivation='None' name='[none:ctprvn_nm:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mlsfc]' derivation='None' name='[none:mlsfc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]'>
+            <groupfilter function='member' level='[none:ctprvn_nm:nk]' member='&quot;경상남도&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' />
+              <text column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</rows>
+        <cols>[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]</cols>
+      </table>
+      <simple-id uuid='{404ACD90-64E6-45DA-BB89-53503B037D85}' />
+    </worksheet>
+    <worksheet name='문화시설별 지역 비교'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_전국 문화시설 현황_2021' name='federated.0z58c0417mf9ln16zfspx040l0ov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z58c0417mf9ln16zfspx040l0ov'>
+            <column-instance column='[ctprvn_nm]' derivation='Count' name='[cnt:ctprvn_nm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mlsfc]' derivation='Count' name='[cnt:mlsfc:qk]' pivot='key' type='quantitative' />
+            <column caption='Ctprvn Nm' datatype='string' name='[ctprvn_nm]' role='dimension' type='nominal' />
+            <column caption='Mlsfc' datatype='string' name='[mlsfc]' role='dimension' type='nominal' />
+            <column-instance column='[ctprvn_nm]' derivation='None' name='[none:ctprvn_nm:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mlsfc]' derivation='None' name='[none:mlsfc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:mlsfc:qk]' num-steps='20' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:mlsfc:qk]' />
+              <text column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:mlsfc:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</rows>
+        <cols>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</cols>
+      </table>
+      <simple-id uuid='{0F1E5059-CCB5-47E3-BA19-8B9B95E93ADC}' />
+    </worksheet>
+    <worksheet name='밀양시 문화시설의 종류 및 수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_전국 문화시설 현황_2021' name='federated.0z58c0417mf9ln16zfspx040l0ov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z58c0417mf9ln16zfspx040l0ov'>
+            <column-instance column='[ctprvn_nm]' derivation='Count' name='[cnt:ctprvn_nm:qk]' pivot='key' type='quantitative' />
+            <column caption='Ctprvn Nm' datatype='string' name='[ctprvn_nm]' role='dimension' type='nominal' />
+            <column caption='Mlsfc' datatype='string' name='[mlsfc]' role='dimension' type='nominal' />
+            <column-instance column='[mlsfc]' derivation='None' name='[none:mlsfc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sgnr_nm]' derivation='None' name='[none:sgnr_nm:nk]' pivot='key' type='nominal' />
+            <column caption='Sgnr Nm' datatype='string' name='[sgnr_nm]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:sgnr_nm:nk]'>
+            <groupfilter function='member' level='[none:sgnr_nm:nk]' member='&quot;밀양시&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:sgnr_nm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' />
+              <text column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</rows>
+        <cols>[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]</cols>
+      </table>
+      <simple-id uuid='{1B13A997-DDE0-490F-AA14-86E2704DCED2}' />
+    </worksheet>
+    <worksheet name='시트 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F86ACA3D-1110-4992-8B1B-FCD9C4EE2BD0}' />
+    </worksheet>
+    <worksheet name='양산시 문화시설의 종류 및 수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_전국 문화시설 현황_2021' name='federated.0z58c0417mf9ln16zfspx040l0ov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z58c0417mf9ln16zfspx040l0ov'>
+            <column-instance column='[ctprvn_nm]' derivation='Count' name='[cnt:ctprvn_nm:qk]' pivot='key' type='quantitative' />
+            <column caption='Ctprvn Nm' datatype='string' name='[ctprvn_nm]' role='dimension' type='nominal' />
+            <column caption='Mlsfc' datatype='string' name='[mlsfc]' role='dimension' type='nominal' />
+            <column-instance column='[mlsfc]' derivation='None' name='[none:mlsfc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sgnr_nm]' derivation='None' name='[none:sgnr_nm:nk]' pivot='key' type='nominal' />
+            <column caption='Sgnr Nm' datatype='string' name='[sgnr_nm]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:sgnr_nm:nk]'>
+            <groupfilter function='member' level='[none:sgnr_nm:nk]' member='&quot;양산시&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:sgnr_nm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' />
+              <text column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</rows>
+        <cols>[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]</cols>
+      </table>
+      <simple-id uuid='{62CE8AC6-F483-4D5C-B335-21A2F4C058EA}' />
+    </worksheet>
+    <worksheet name='전국 문화시설의 수 비교'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_전국 문화시설 현황_2021' name='federated.0z58c0417mf9ln16zfspx040l0ov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z58c0417mf9ln16zfspx040l0ov'>
+            <column-instance column='[lclas]' derivation='Count' name='[cnt:lclas:qk]' pivot='key' type='quantitative' />
+            <column caption='Ctprvn Nm' datatype='string' name='[ctprvn_nm]' role='dimension' type='nominal' />
+            <column caption='Lclas' datatype='string' name='[lclas]' role='dimension' type='nominal' />
+            <column-instance column='[ctprvn_nm]' derivation='None' name='[none:ctprvn_nm:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;경기도&quot;</bucket>
+              <bucket>&quot;서울특별시&quot;</bucket>
+              <bucket>&quot;강원도&quot;</bucket>
+              <bucket>&quot;전라남도&quot;</bucket>
+              <bucket>&quot;경상남도&quot;</bucket>
+              <bucket>&quot;경상북도&quot;</bucket>
+              <bucket>&quot;충청남도&quot;</bucket>
+              <bucket>&quot;전라북도&quot;</bucket>
+              <bucket>&quot;충청북도&quot;</bucket>
+              <bucket>&quot;제주특별자치도&quot;</bucket>
+              <bucket>&quot;부산광역시&quot;</bucket>
+              <bucket>&quot;인천광역시&quot;</bucket>
+              <bucket>&quot;대구광역시&quot;</bucket>
+              <bucket>&quot;광주광역시&quot;</bucket>
+              <bucket>&quot;대전광역시&quot;</bucket>
+              <bucket>&quot;울산광역시&quot;</bucket>
+              <bucket>&quot;세종특별자치시&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:lclas:qk]' />
+              <text column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:lclas:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:lclas:qk]</rows>
+        <cols>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</cols>
+      </table>
+      <simple-id uuid='{EFCA7B19-2CEC-44FC-A2B2-024C2E71A497}' />
+    </worksheet>
+    <worksheet name='창원시 문화시설의 종류 및 수 '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_전국 문화시설 현황_2021' name='federated.0z58c0417mf9ln16zfspx040l0ov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z58c0417mf9ln16zfspx040l0ov'>
+            <column-instance column='[ctprvn_nm]' derivation='Count' name='[cnt:ctprvn_nm:qk]' pivot='key' type='quantitative' />
+            <column caption='Ctprvn Nm' datatype='string' name='[ctprvn_nm]' role='dimension' type='nominal' />
+            <column caption='Mlsfc' datatype='string' name='[mlsfc]' role='dimension' type='nominal' />
+            <column-instance column='[mlsfc]' derivation='None' name='[none:mlsfc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sgnr_nm]' derivation='None' name='[none:sgnr_nm:nk]' pivot='key' type='nominal' />
+            <column caption='Sgnr Nm' datatype='string' name='[sgnr_nm]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:sgnr_nm:nk]'>
+            <groupfilter function='member' level='[none:sgnr_nm:nk]' member='&quot;창원시&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:sgnr_nm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' />
+              <text column='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</rows>
+        <cols>[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]</cols>
+      </table>
+      <simple-id uuid='{ADC1D5E7-8FE8-4E92-9771-0CDDC68B4B1A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='전국 문화시설의 수 비교'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:lclas:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:lclas:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{02A43EA7-0A4B-4FAF-8091-2403475DB55D}' />
+    </window>
+    <window class='worksheet' name='문화시설별 지역 비교'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:mlsfc:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{52582B36-0CA1-42CA-ABD8-50DC7A1C74A1}' />
+    </window>
+    <window class='worksheet' name='경상남도 문화시설의 종류 및 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F5CBD1B6-F8F4-4897-B270-7A3D8897D545}' />
+    </window>
+    <window class='worksheet' name='밀양시 문화시설의 종류 및 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:sgnr_nm:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F5222571-4F25-4BFD-B5AD-0339926254A0}' />
+    </window>
+    <window class='worksheet' name='창원시 문화시설의 종류 및 수 '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FC60C30A-12F7-41AA-B6A3-9C25BD233EC9}' />
+    </window>
+    <window class='worksheet' name='양산시 문화시설의 종류 및 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0z58c0417mf9ln16zfspx040l0ov].[cnt:ctprvn_nm:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:ctprvn_nm:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:mlsfc:nk]</field>
+            <field>[federated.0z58c0417mf9ln16zfspx040l0ov].[none:sgnr_nm:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8020C216-52C2-4641-93F9-10C83F2688C0}' />
+    </window>
+    <window class='worksheet' maximized='true' name='20-30대 인구수 대비 지역별 문화시설 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[sum:ALL_CTLSTT_CO:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[none:CTPRVN_NM:nk]</field>
+            <field>[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[none:SIGNGU_NM:nk]</field>
+            <field>[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[sum:ALL_CTLSTT_CO:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CDD8C7B7-64ED-43FC-825A-D5EEB1AC602A}' />
+    </window>
+    <window class='worksheet' name='시트 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[none:CTPRVN_NM:nk]</field>
+            <field>[federated.0nxnmyv1mxk6pp1dkvioy0qrr6iu].[none:SIGNGU_NM:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E3319C88-A95B-4DEF-8F11-6BC815CECD8F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='20-30대 인구수 대비 지역별 문화시설 수' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='경상남도 문화시설의 종류 및 수' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='문화시설별 지역 비교' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='밀양시 문화시설의 종류 및 수' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='시트 9' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='양산시 문화시설의 종류 및 수' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAJOklEQVR4nO3dyW8b5x3G8WeGi0hxNFzEVaJkSV6kWG1Su0Uh1EhPPdXoX5VT/wBfix6a
+      S09FLy6KoGlTNKkdNzJiK94iahclauE6JMVl3h6aFmkhV5TN0UTzez4n2aYH72vzyxkOh/Nq
+      SikFIqF0twdA5CYGQKIxABKNAZBoDIBEYwAkmiMBKKXQ7/ed2LSrer2e20MYOulz4h6ARGMA
+      JBoDINH8Tm34g1/9AevFY6c27wqlFDRNc3sYQyV9To4F8GytiKeFPac2TzQUPAQi0RgAicYA
+      SDQGQKIxABKNAZBoDIBEYwAkGgMg0RgAifaaSyEUdjbXcFxtIj2RR886wnG1hcxEHtWDXdia
+      H5PTM2hbNSQSY6hUTnBY2gI0hdTEPGKGY1dYEA3Vqc9UpRRKu9tY2yvDHM/gaHcH63tlmONZ
+      QNnodDuwbRuHu5tY2+gjm7uCptWCbbeghWqIGYmLngfRGzk1AE3TEB1PYzGWQjg0glji3z8H
+      0LcCQK+Dk3YbqfwskvYJdD0EOx5Fu2silx676DkQvbHXHKtomLu+8J9fpRPmt36Onvo3Et96
+      DG82R5cF3wSTaAyARGMAJBoDINEYAInGAEg0BkCiMQASjQGQaAyARNOcWCRPKYWV1V00O966
+      87Dd70P3+dwexlBJn5NjAdi2DZ/H/mF7vR78fm9d6i19TjwEItEYAInGAEg0BkCiMQASjQGQ
+      aAyARHPsBPAvf/cYm4eWU5sneq27t/L4xY/nBnos9wAkGgMg0RgAicYASDQGQKIxABKNAZBo
+      DIBEYwAkGgMg0RgAedLB7hZWXq2f+bgBrgVS+OSj+6g2e1i8vYTC8p/hj2WwsLiEw80VIBhE
+      MjGB9WcPEczOYCKRQSYde/sZEL0VDa9evsLi9Zn/+6gz9wBK2Uhl85iYnIQRDmJ65gbGRn2o
+      VStoWQ1YrQ5sKBiJNPqNCvSAt75gTZdTrd1BvVE/83FnPls1TUcsFoVutREKBaCPhJFPZxAx
+      k7gxm4Gyu7CaPfjsFCqNFoxIeCgTIHobV+fmcHXu7CtCB3i51pDLX0Hum1+ZN+b/+0/1AAwj
+      AMOYQuab3+MSSXRZ8E0wicYASDQGQKIxABKNAZBoDIBEYwAkGgMg0RgAicYASDSuEHMO0ldT
+      uSy4QgzRgBgAicYASDQGQKIxABKNAZBoDIBEc+wEcKl+gp7SnNq8K/r9vuc+24iFfBjz1scA
+      5+LY1D96fohSo+vU5mlI7i4msRAOuj0M1/AQiERjACQaAyDRGACJxgBINAZAojEAEo0BkGgM
+      gERjACTa+S6FUAr1RgOq14IeSuBodw3tno10bhK1wyLg92M8NY1IiF1dJntbBTzfKOH9nyzB
+      J+y/7pzXAik8+uwvSOVnYJgadjbXsHfcwG0jitL+AZTdQkeZuDadcGa05IhUOoutUhUSV3U4
+      X++ahhsLiwigj2g8jpGRIILBIMJhA9NTk4gnskgmDIeGSk5ZX32JRrsLCEzAsdui/ObBFq8G
+      vQTuLiaxkIu6PYyh4m1RiAbEAEg0BkCiMQASjQGQaAyARGMAJBoDINEYAInGAEg0x26M9f1J
+      E82u7dTmXWHbNnTdW68ZiYjcm2IBXCLpXKQvJ3RZ8FogogExABKNAZBoDIBEYwAkGgMg0RgA
+      iebYCeCHuxbqHvtK8NJECKa3TpmLxz0AicYASDQGQKIxABKNAZBoDIBEYwAkGgMg0RgAicYA
+      SDQGcE5W5RDH9Zbbw6AhOf3KFqXw7NED+PN5GAhhb7eAcMgHPXIFe68eotLq4Xu3l1BY/hj+
+      WBbvLC5hfeVv0M1xTGWnkUnHLngaF+ekcYxip4fEWNjtodAQnL4H0AAzGUfYFwSgode2UG2c
+      IB43kMrlMTmZhzEaxNTMPIywD9VaGf2+jk7bgu6xL1j/r8rRAb786rnbw6AhOfXZqhSQyE7D
+      truwlR/56VnU212MhQPoRU3ozROERgLwjYQxlc4gYqYQDXZRqTcRCgUueg4Xau69O5h7z+1R
+      0LA4dluUv2/XvXk5dMhb99HhbVGIBGMAJBoDINEYAInGAEg0BkCiMQASjQGQaAyARGMAJBpX
+      iDkH6ZcNXBa8FIJoQAyARGMAJBoDINEYAInGAEg0BkCiOXYCuN6xYWPoHzG4yvDW6XKCgwE8
+      O2x58jvBQW9/518cHgKRaAyARGMAJBoDINEYAInGAEg0BkCiMQASjQGQaAyARBvgUgiFjcLX
+      aHdtpHN51A92EU6kEQroePnkC/hjOVydyuOotAP4/RhPTSMS8m5XW1+vAGYeU+mo20OhITjz
+      maqUjcKrF3jy5ClKh2XoQYVP/vQpGg0LsfE0jLAP9UYDe/sHKG4VUCxVLmLcrpmayKBmcY0w
+      rzgzAE3TMXvtBubn55HLJNGsNXHz3ZuA6uNgZxvFgzKg+ZHNpBBPZJFMGBcxbtcUCgWsrhbc
+      HgYNCVeIOQeuEHM58LYoRANiACQaAyDRGACJxgBINAZAojEAEo0BkGgMgERjACSaY5+BjwV9
+      8HtrgRj4NM3tIdCQORbAO8mQJ5dIIm/hIRCJxgBINAZAojn2HsC2bac27RqlFPr9vtvDGCrp
+      c3IsAJ/PB1331g5G0zTO6RI4z5wc+UYY0WXhWPrb66t49PipZ9aIqZb3sLa57/YwhsqqHuPz
+      f3yBTs87h6vddgPLn3+Kw8Zg38d1LIA+dCTMUc8EEI0nMOKxT/aUBkxNzyDo99AhkB6AaUZg
+      dwf7zMaxmU/mMhg1Yp45zVQ+OEazbcE7r5UAlEK1XEbPQycsNNiA38R4LDzY4/kegCTzygs0
+      0RthACSat+6IRJ7SqRVx/69PMT7Sx9jsTQSsCtITeZycWIhE42gcV1Bvt7Bw7Sru3buHd2/d
+      wlw+i3qri7gZxPKTDSh/AD//2fvYWXuBByvr+MHNGwjaFu5//BkWf3iHewD67uo2a0hOXUfK
+      GEEiE0GpVMfvP/w16r4I/vjbD/Hw8VfY3y2iDeDmtTy+fL6OwsY29vf38Hz5KSqH2+jZ//pE
+      uNvrYSKXw9HREZqdPmZnZzEWDvBNMH23ra++QCyZRbm6j5XlDdz56Y8wasZxXCrCGB2FDcAw
+      TTRqNViWhUhkFFCArmkYi0ZRLpcRj8dR3NlGKjeJZqOB/kkdhc0iYqkc/gnxRQT4g6w9IAAA
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='전국 문화시설의 수 비교' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='창원시 문화시설의 종류 및 수 ' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
